@@ -1,1 +1,1 @@
-FOR n8n
+FOR n8n workflow
