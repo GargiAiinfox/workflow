@@ -8,5 +8,5 @@ extract from html
 added file format to http node
 EXTRACT FROM FILE IN BINARY ..
 FOR TESTING
-CREAYEDLLL
+CREAYEDLLLll
 again 
