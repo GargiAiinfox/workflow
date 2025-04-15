@@ -4,3 +4,4 @@ for making a code with patterns
 ACTIVATED
 now see
 added another node
+extract from html
