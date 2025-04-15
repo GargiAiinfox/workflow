@@ -1,1 +1,1 @@
-for n8n 
+FOR n8n
