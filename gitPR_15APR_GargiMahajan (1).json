@@ -82,7 +82,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "=Compare the GitHub commit changes {{ \n  Object.values($('HTTP Request').item.json.body.payload.diffEntryData)\n    .flatMap(entry => entry.diffLines.map(line => line.text))\n    .join('\\n') \n}} with the Jira ticket details:\n- Issue Key: {{ $('Code').item.json.key }}\n- Issue id:{{ $('Code').item.json.id }}\n- Issue Name: {{ $('Code').item.json.ticketName }}\n- Issue Description:{{ $('Code').item.json.description }}\nDetermine if the changes align with the ticket's purpose (e.g., workflow testing for AIP-10). Return a single word: 'aligns' if they match, 'does not align' if they don’t, in a field named 'result'.\nuse the tool to update the status to completed",
+        "text": "=Compare the GitHub commit changes  {{ \n  Object.values($('HTTP Request').item.json.body.payload.diffEntryData)\n    .flatMap(entry => entry.diffLines.map(line => line.text))\n    .join('\\n') \n}} with the Jira ticket details:\n- Issue Key: {{ $('Code').item.json.key }}\n- Issue id:{{ $('Code').item.json.id }}\n- Issue Name: {{ $('Code').item.json.ticketName }}\n- Issue Description:{{ $('Code').item.json.description }}\nDetermine if the changes align with the ticket's purpose (e.g., workflow testing for AIP-10). Return a single word: 'aligns' if they match, 'does not align' if they don’t, in a field named 'result'.\nuse the tool to update the status to completed",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
